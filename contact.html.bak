@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang en="en">
+<head>
+	<meta charset="UTF-g">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ALL PRODUCTS - U COMPUTERS</title>
+	<link rel="stylesheet" href="groupproject.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Syne+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+	
+	<div class="container">
+	<div class ="navbar">
+		<div class="logo">
+			<a href="groupproject.php">
+			<img src="images/logo.png" width="125px"> </a>
+		</div>
+		<nav>
+		<ul id="MenuItems">
+			<li><a href="groupproject.php">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="account.php">Account</a></li>
+		</ul>	
+		</nav>
+		<a href="cart.php">
+		<img src="images/cart.png" width="30px" height="30px">
+		</a>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		
+	</div>
+		
+	</div>
+
+<!----------single product details--------->
+
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2">
+			
+			<div class="col-2">
+				<img src="images/shoptype.jpg" width="100%" id="productimg">
+				
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="images/shop1.jpg" width="100%" class="small-img">
+					</div>	
+					<div class="small-img-col">
+						<img src="images/shoptype.jpg" width="100%" class="small-img">
+					</div>	
+					<div class="small-img-col">
+						<img src="images/shop3.jpg" width="100%" class="small-img">
+					</div>	
+					<div class="small-img-col">
+						<img src="images/shop4.jpg" width="100%" class="small-img">
+					</div>	
+				</div>
+				
+			</div>
+				
+				<h1>Contact Us </h1>
+				<h4>000-1111-3333</h4>
+				<h4>000-2222-3333</h4>
+				
+				<a href="https://goo.gl/maps/v9sua2SpYD4fzocL7" class="btn">Visit Our Shop</a>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5600.721982975597!2d79.90852668271468!3d6.972884047798702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1648720754592!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				
+				<br>
+				<br>
+				<hr width="80%">
+				<h3>Visit Us for the Ultimate Experience <i class="fa fa-indent"></i> </h3>
+				<br>
+				<p>Our store is situated in a very good placeof sjsj bla la lblaalblalaaa
+				for tuiiy mirir woiokojij oa denims for an evefmmiop wotj tje gios</p>
+				
+				<p></p>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+		<!--- brands--->
+	<div class="brands">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/logo-godrej.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-oppo.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-coca-cola.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-paypal.png">
+				</div>
+				<div class="col-5">
+					<img src="images/logo-philips.png">
+				</div>
+			</div>	
+		</div>
+	</div>
+
+<!-------footer----------->
+	<div class="footer">
+		<div class= "container">
+			<div class="row">
+				
+				<div class="footer-col-2">
+					<img src="images/logo-white.png">
+					<p>Our purpose is to provide a good service to our customers while improving on our qualiity of sportss accescssibel to maasASAnt</p>
+				</div>
+				
+				<div class="footer-col-3">
+					<h3>Use full links</h3>
+					
+					<ul>  
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						
+					</ul>
+				
+				</div>
+				
+				<div class="footer-col-4">
+					<h3>Follows us</h3>
+					
+					<ul>  
+						<a style="text-decoration:none;" href="https://www.youtube.com"><li>Facebook</li> </a>
+						<a style="text-decoration:none;" href="https://www.youtube.com"><li>Twitter</li> </a>
+						<a style="text-decoration:none;" href="https://www.youtube.com"><li>YouTube</li> </a>
+						
+					</ul>
+				
+				</div>
+				
+			</div>
+			
+				<hr>
+				<p class="copyright">Copyright 2020 All rights Reserved<br>Developed By Group No:11</p>
+		</div>
+		
+	</div>
+
+	
+<!-------js for toggle menu------->
+<script>
+
+	var MenuItmes= document.getElementById("MenuItems");
+	MenuItems.style.maxHeight= "0px";
+
+	function menutoggle(){
+	 if(MenuItems.style.maxHeight == "0px")
+		{
+		MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+		MenuItems.style.maxheight = "0px";
+		}
+	
+	}
+
+
+</script>
+
+<!----------js for about contactus gallery------>
+<script>
+	var Productimg = document.getElementById("productimg");
+	var Smallimg = document.getElementsByClassName("small-img");
+	
+		Smallimg[0].onclick = function(){
+		Productimg.src = Smallimg[0].src;
+		}
+	
+		Smallimg[1].onclick = function(){
+		Productimg.src = Smallimg[1].src;
+		}
+		
+		Smallimg[2].onclick = function(){
+		Productimg.src = Smallimg[2].src;
+		}	
+		Smallimg[3].onclick = function(){
+		Productimg.src = Smallimg[3].src;
+		}
+		
+</script>
+
+</body>
+</html>
+	
+	

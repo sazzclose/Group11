@@ -1,0 +1,204 @@
+<html>
+
+<!DOCTYPE html>
+<html lang en="en">
+<head>
+	<meta charset="UTF-g">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ALL PRODUCTS - U COMPUTERS</title>
+	<link rel="stylesheet" href="groupproject.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Syne+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+	
+	<div class="container">
+	<div class ="navbar">
+		<div class="logo">
+			<a href="groupproject.html">
+			<img src="images/logo.png" width="125px"> </a>
+		</div>
+		<nav>
+		<ul id="MenuItems">
+			<li><a href="groupproject.php">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="account.php">Account</a></li>
+		</ul>	
+		</nav>
+		<a href="cart.html">
+		<img src="images/cart.png" width="30px" height="30px">
+		</a>
+		<img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+		
+	</div>
+		
+	</div>
+	
+	
+	
+	
+<div class="offer">
+	<div class="small-container">
+		<div class = "row">
+		
+			
+			<div class="col-2">
+				<br>
+				<a href="" class="btn">Visit Home &#10152;</a>
+			
+	
+	
+	<!------DATABASEPART FOR THE REGISTRYFORM----->
+
+<?php
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+$conn = mysqli_connect($servername, $username, $password);
+
+if(!$conn){
+	
+	die("Connection Failed:". mysqli_connect_error());
+}
+
+echo "";
+
+/*
+
+$sql = "CREATE DATABASE group11";
+IF (mysqli_query($conn,$sql)){
+	echo ""; 
+}
+else{
+	echo "Eroor creating db".mysqli_error($conn);
+}
+
+
+
+
+mysqli_select_db($conn,"group11");   //this code connects to the db again
+										//table creation part
+$sql ="CREATE TABLE customer(				
+UserName varchar(15) NOT NULL,
+Email varchar(30),
+Password varchar(30),
+Contactno int(11))";
+
+if(mysqli_query($conn, $sql)){
+	echo "<h3>Table Created Successfully</h3>";
+}
+else 
+{
+	echo "<h3>Error creating table</h3>" .mysqli_error($conn);
+}
+
+*/
+
+
+mysqli_select_db($conn,"group11"); 
+
+$sql= "insert into customer(UserName, Email, Password, Contactno)
+VALUES('$_POST[uname]','$_POST[email]','$_POST[pword]','$_POST[contactno]')" ;
+
+if(!mysqli_query($conn, $sql)){
+	die ('Error:'. mysqli_error($conn));
+}
+
+
+echo "<h1>You Have Been Registered</h1>";
+
+?>
+	
+<br>
+<h2>Welcome <?php echo $_POST["uname"]; ?>!<br>
+Your registered email is <?php echo $_POST["email"]; ?>.</h2>
+<br>
+<h3>Please Login Again With Your User Name And Password</h3>
+
+</div>	
+</div>
+		</div>
+	</div>
+	
+	
+	
+	
+
+<!-------footer----------->
+	<div class="footer">
+		<div class= "container">
+			<div class="row">
+				
+				<div class="footer-col-2">
+					<img src="images/logo-white.png">
+					<p>Our purpose is to sjijsidsihd majeij tghe plases and bensdioks of sportss accescssibel to maasASAnt</p>
+				</div>
+				
+				<div class="footer-col-3">
+					<h3>Use full links</h3>
+					
+					<ul>  
+						<li>Coupons</li>
+						<li>Blog Post</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				
+				</div>
+				
+				<div class="footer-col-4">
+					<h3>Follows us</h3>
+					
+					<ul>  
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagramm</li>
+						<li>YoutTube</li>
+					</ul>
+				
+				</div>
+				
+			</div>
+			
+				<hr>
+				<p class="copyright">Copyright 2020 All rights Reserved<br>Developed By Group No:11</p>
+		</div>
+		
+	</div>
+
+	
+<!-------js for toggle menu------->
+<script>
+
+	var MenuItmes= document.getElementById("MenuItems");
+	MenuItems.style.maxHeight= "0px";
+
+	function menutoggle(){
+	 if(MenuItems.style.maxHeight == "0px")
+		{
+		MenuItems.style.maxHeight = "200px";
+		}
+		else
+		{
+		MenuItems.style.maxheight = "0px";
+		}
+	
+	}
+
+
+</script>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
